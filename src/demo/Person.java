@@ -15,7 +15,7 @@ public class Person extends Thread {
     try {
       book = bookStore.borrowBook();
       if (book!=null){
-        System.out.println("Person " + id+ " borrows successfully");
+        System.out.println("Person " + id+ " borrows book " + book.getId() + " successfully");
       }
       Thread.sleep(10000);
       bookStore.returnBook(book, id);
